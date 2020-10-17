@@ -1,2 +1,7 @@
 # docker-container-timeout
-Bash script to force terminate long running docker containers on a host using predefined timeout value in minutes
+
+This script will forcibly terminate any long-running docker containers on a host which have exceeded a pre-defined time limit.
+
+- Execute on your docker host or an ECS container instance
+- Schedule as a cron job to cleanup containers or tasks which have hung
+- ECS agent containers are excluded automatically
